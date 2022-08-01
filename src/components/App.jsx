@@ -1,7 +1,10 @@
 import { Profile } from '../components/profile/profile'
-import {Statistics} from '../components/statistics/statistics'
+import { Statistics } from '../components/statistics/statistics'
+import {Friendlist} from '../components/friendlist/friendlist'
 import user from '../components/path/user.json'
 import data from '../components/path/data.json'
+import friends from '../components/path/friends.json'
+
 
 
 export const App = () => {
@@ -31,6 +34,10 @@ export const App = () => {
       <Statistics
         props={data}
       />
+      
+      <Friendlist
+        props={friends} />
+      
     </div>
   );
 };
