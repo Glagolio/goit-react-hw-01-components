@@ -1,16 +1,21 @@
 import { Profile } from '../components/profile/profile'
-import user from '../components/profile/user.json'
+import {Statistics} from '../components/statistics/statistics'
+import user from '../components/path/user.json'
+import data from '../components/path/data.json'
+
 
 export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+        color: '#010101',
+        display: 'flex',
+        flexDirection: 'column',
+
       }}
     >
       <Profile
@@ -19,7 +24,13 @@ export const App = () => {
   location={user.location}
   avatar={user.avatar}
   stats={user.stats}
-    />
+  key={user.tag}      
+        
+      />
+      
+      <Statistics
+        props={data}
+      />
     </div>
   );
 };
