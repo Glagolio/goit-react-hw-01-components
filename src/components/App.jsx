@@ -18,7 +18,6 @@ export const App = () => {
         alignItems: 'center',
         fontSize: 40,
         color: '#010101',
-        display: 'flex',
         flexDirection: 'column',
 
       }}
@@ -35,6 +34,7 @@ export const App = () => {
       
       <Statistics
         props={data}
+        title='Upload stats'
       />
       
       <Friendlist
