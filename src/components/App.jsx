@@ -4,6 +4,8 @@ import {Friendlist} from '../components/friendlist/friendlist'
 import user from '../components/path/user.json'
 import data from '../components/path/data.json'
 import friends from '../components/path/friends.json'
+import { TransactionHistory } from '../components/transactions/transactions'
+import transactions  from '../components/path/transactions.json'
 
 
 
@@ -37,6 +39,9 @@ export const App = () => {
       
       <Friendlist
         props={friends} />
+      
+      <TransactionHistory
+        props={transactions} />
       
     </div>
   );
