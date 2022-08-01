@@ -23,9 +23,9 @@ export const Statistics = ({ props, title}) => {
 Statistics.propTypes = {
     props: PropTypes.arrayOf(
         PropTypes.exact({
-            id: PropTypes.string,
-            label: PropTypes.string,
-            percentage: PropTypes.number,
+            id: PropTypes.string.isRequired,
+            label: PropTypes.string.isRequired,
+            percentage: PropTypes.number.isRequired,
         })
     )
 }
