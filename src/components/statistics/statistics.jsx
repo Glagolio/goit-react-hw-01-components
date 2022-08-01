@@ -18,3 +18,14 @@ export const Statistics = ({props}) => {
             </ul>
         </section>
                  )}
+
+
+Statistics.propTypes = {
+    props: PropTypes.arrayOf(
+        PropTypes.exact({
+            id: PropTypes.string,
+            label: PropTypes.string,
+            percentage: PropTypes.number,
+        })
+    )
+}
