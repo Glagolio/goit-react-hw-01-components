@@ -4,7 +4,7 @@ import style from './Profile.module.css';
 export const Profile = ({ username, tag, location, avatar, stats }) => {
     return (
         <div className={style.profile} key={tag}>
-            <div className="description">
+            <div>
                 <img
                     src={avatar}
                     alt={username}

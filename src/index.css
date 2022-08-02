@@ -1,4 +1,4 @@
-@import-normalize; /* bring in normalize.css styles */
+
 
 body {
   margin: 0;
@@ -14,6 +14,5 @@ code {
     monospace;
 }
 
-.main {
-  
-}
+
+

@@ -9,7 +9,7 @@ export const Statistics = ({ props, title}) => {
             <h2 className={style.title}>{title}</h2>
             <ul className={style.statList}>
 
-                {props.map(({id, label, percentage}) =>
+                {props.map(({ id, label, percentage }) =>
                 (<li className={style.item} key={id}>
                     <span className={style.label}>{label}</span>
                     <span className={style.percentage}>{percentage}%</span>
@@ -21,6 +21,7 @@ export const Statistics = ({ props, title}) => {
 
 
 Statistics.propTypes = {
+    title: PropTypes.string,
     props: PropTypes.arrayOf(
         PropTypes.exact({
             id: PropTypes.string.isRequired,
